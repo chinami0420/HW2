@@ -1,18 +1,26 @@
+*{
+  box-sizing: border-box;
+}
+
+
 body {
   background-image: url(https://i.pinimg.com/originals/33/d0/93/33d093d859f01db36c7b2ec942493a7b.jpg);
   margin: 0;
   padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 .chinami {
   color: white !important;
   font-size: 35px;
   margin-left: 145px;
+  text-align: center !important;
 }
 
 .navbar-expand-lg {
   background-color: white;
   height: 100px;
-  width: 960px;
+  width: 70%;
   margin-right: 15%;
   margin-left: 15%; 
   display: flex;
@@ -35,7 +43,7 @@ body {
 }
 
 #navbarSupportedContent {
-  width:960px;
+  widows: 70%;;
   padding-left: 390px;
   display: block;
   float: right;
@@ -58,8 +66,8 @@ body {
 }
 
 .main {
-  width: 960px;
-  height: 500px;
+  width: 70%;
+  height: 800px;
   background: white;
   padding: 20px;
   margin-top: 50px;
@@ -101,11 +109,18 @@ body {
   font-size: 30px;
 }
 
+.content{
+  width: 45%;
+  height: 30%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+} 
 p {
   font-size: 27px;
   color: grey;
 }
-img {
+#profile {
   float: left;
   width: 250px;
   height: 250px;
@@ -128,7 +143,7 @@ label {
   margin-bottom: 0;
   bottom: 0;
   position: fixed;
-  width: 960px;
+  width: 70%;
   margin-left: 15%;
   margin-right: 15%;
   font-size: 10;
@@ -161,6 +176,8 @@ input {
 button {
   cursor: pointer;
 }
+
+
 
 @media screen and (max-width: 640px) {
   .navbar-expand-lg {
@@ -200,6 +217,9 @@ button {
     margin-right: 0;
     margin-left: 0;
   }
+  .content{
+    width: 100%;
+  }
   
 
 @media screen and (max-width: 768px) {
@@ -207,5 +227,14 @@ button {
     width: 100px;
     height: 40px;
   }
+  .content{
+    width: 100%;
+  }
 }
   
+@media screen and (max-width: 1000px) {
+  .content{
+    width: 50%;
+  }
+
+}
